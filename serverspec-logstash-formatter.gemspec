@@ -16,6 +16,9 @@ Gem::Specification.new do |spec|
   spec.files         = Dir['{lib}/**/*'] + %w{README.md LICENSE}
   spec.test_files    = Dir['{spec}/**/*']
 
+  spec.signing_key   = File.expand_path('~/.gem/certs/jshedde-private_key.pem') if $0 =~ /gem\z/
+  spec.cert_chain    = %w{certs/jshedde.pem}
+
   spec.add_dependency             'rspec-core', ["~> 3.0"]
 
   spec.add_development_dependency 'rspec', ["~> 3.0"]
