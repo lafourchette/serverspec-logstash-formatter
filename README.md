@@ -1,5 +1,7 @@
 # Serverspec logstash formatter
 
+[![Gem Version](https://badge.fury.io/rb/serverspec-logstash-formatter.svg)](https://rubygems.org/gems/serverspec-logstash-formatter)
+
 A logstash formatter for [serverspec](http://serverspec.org)
 
 Installation
